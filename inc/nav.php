@@ -11,15 +11,13 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li<?php if ($_SERVER['REQUEST_URI'] == "/index.php" || $_SERVER['REQUEST_URI'] == "/") {
+        <li<?php if ($page == "index.php") {
           print " class='active'";
         } ?>><a href="index.php">Home</a></li>
-        <li<?php if ($_SERVER['REQUEST_URI'] == "/library.php") {
+        <li<?php if ($page == "library.php") {
           print " class='active'";
         } ?>><a href="library.php">Library</a></li>
-        <li<?php if ($_SERVER['REQUEST_URI'] == "/videos.php") {
-          print " class='active'";
-        } ?>><a href="videos.php">Videos</a></li>
+        <li><a href="landing.php">(Landing)</a></li>
       </ul>
     </div>
     <img src="assets/img/profile.jpg" class="profileimg"/>

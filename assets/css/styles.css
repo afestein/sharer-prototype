@@ -106,8 +106,14 @@ body {
     height: 90px;
     line-height: 90px;
     border-top: 1px solid #D9D8DD;
-    margin-top: 50px;
     color: #8c8c91;
+    position:relative;
+    z-index:2;
+    background:#FFF;
+}
+
+#footer ul {
+    margin:0;
 }
 
 #submit {
@@ -152,36 +158,36 @@ body {
     z-index: 0;
 }
 
-.homeWrapper {
+.landingWrapper {
     height: 100%;
 }
 
-.homeWrapper .row {
+.landingWrapper .row {
     height: 33%;
 }
 
-#landingWrap, #homeContent {
+#landingVisible, #landingContent {
     color: #FFF;
 }
 
-.homeHeader {
+.landingHeader {
     padding-top: 30px;
 }
 
-.homeHeadline.col-lg-12 {
+.landingHeadline.col-lg-12 {
     text-align: center;
     color: #FFF;
     height: 100%;
 }
 
-.homeHeadline, .promo h2 {
+.landingHeadline, .promo h2 {
     font-size: 70px;
     font-weight: 700;
     line-height: 84px;
     letter-spacing: 10px;
 }
 
-.homeHeadline span {
+.landingHeadline span {
     font-size: 24px;
     border-bottom: 8px solid #E11325;
     width: 320px;
@@ -190,12 +196,12 @@ body {
     margin-bottom: 17px;
 }
 
-.homeHeadline .cell, .homeHeadline .table {
+.landingHeadline .cell, .landingHeadline .table {
     height: 100%;
     vertical-align: middle;
 }
 
-.homePlay {
+.landingPlay {
     text-align: center;
 }
 
@@ -212,10 +218,15 @@ body {
     color: #E11325;
 }
 
-#landingWrap {
+#landingVisible {
     position: relative;
     height: 100%;
     z-index:1;
+}
+
+#landingVisible a {
+    color:#FFF;
+    text-decoration: underline;
 }
 
 #redDivider {
@@ -227,7 +238,7 @@ body {
     width: 100%;
 }
 
-#homeContent {
+#landingContent {
     position: relative;
 }
 
@@ -240,7 +251,7 @@ body {
     left: 0;
 }
 
-.home #footer {
+.landing #footer {
     width:100%;
     background:#FFF;
     position:relative;

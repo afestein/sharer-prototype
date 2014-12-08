@@ -1,4 +1,10 @@
-<?php // Grab some random YouTube stuff
+<?php
+// Figure out what page we are on while prototyping
+$page = explode("/", $_SERVER['REQUEST_URI']);
+$page = array_pop($page);
+if ($page == "") {$page = "index.php";}
+
+// Grab some random YouTube stuff
 function getVideos($term, $limit)
 {
   $vids = simplexml_load_file('https://gdata.youtube.com/feeds/api/videos?q=' . $term);
@@ -42,4 +48,4 @@ function getVideos($term, $limit)
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body<?php if ($_SERVER['REQUEST_URI'] == "/index.php" || $_SERVER['REQUEST_URI'] == "/") {print " class='home'";}?>>
+  <body<?php if ($page == "landing.php") {print " class='landing'";}?>>
