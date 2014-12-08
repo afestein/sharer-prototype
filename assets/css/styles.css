@@ -1,5 +1,9 @@
 /* Layout */
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: #F7F6F4;
 }
@@ -13,6 +17,8 @@ body {
 
 .navbar-brand {
     height: 76px;
+    width: 130px;
+    background: url(../img/logo-white.png) center no-repeat;
 }
 
 .navbar-nav > li > a {
@@ -119,6 +125,146 @@ body {
     float: right;
 }
 
+/*.layoutTable {*/
+    /*display: table;*/
+    /*width: 100%;*/
+/*}*/
+
+.layoutRow {
+    display:table-row;
+}
+
+.vcenter {
+    display: table-cell;
+    float:none;
+    vertical-align: middle;
+}
+
+/* Home Page */
+
+#bgVideo {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.homeWrapper {
+    height: 100%;
+}
+
+.homeWrapper .row {
+    height: 33%;
+}
+
+#landingWrap, #homeContent {
+    color: #FFF;
+}
+
+.homeHeader {
+    padding-top: 30px;
+}
+
+.homeHeadline.col-lg-12 {
+    text-align: center;
+    color: #FFF;
+    height: 100%;
+}
+
+.homeHeadline, .promo h2 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 10px;
+}
+
+.homeHeadline span {
+    font-size: 24px;
+    border-bottom: 8px solid #E11325;
+    width: 320px;
+    display: inline-block;
+    line-height: 61px;
+    margin-bottom: 17px;
+}
+
+.homeHeadline .cell, .homeHeadline .table {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.homePlay {
+    text-align: center;
+}
+
+.getInvolved {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.getInvolved span {
+    font-style: italic;
+}
+
+.getInvolved span span {
+    color: #E11325;
+}
+
+#landingWrap {
+    position: relative;
+    height: 100%;
+}
+
+#redDivider {
+    background: #E11325;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#homeContent {
+    position: relative;
+}
+
+#opacityMask {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home #footer {
+    width:100%;
+    background:#FFF;
+    position:relative;
+    z-index:1;
+    margin:0;
+    height: 142px;
+    border-bottom:10px solid #E11325;
+}
+
+.promo {
+    font-weight:600;
+    font-size:18px;
+}
+.promo > div {
+    height: 500px;
+}
+
+.promo img {
+    float:left;
+}
+
+.promo h2 span {
+    color:#E11325;
+}
+
 /* Typography */
 
 body {
@@ -184,7 +330,7 @@ h1 {
     height: 90px;
     margin: 20px auto;
     position: relative;
-    background-size:100%;
+    background-size: 100%;
 }
 
 .iconRadar {
@@ -204,7 +350,7 @@ h1 {
     height: 100%;
     opacity: 0;
     transform: rotate(-180deg);
-    background-size:100%;
+    background-size: 100%;
 }
 
 .iconRadar.activated div {
@@ -214,7 +360,7 @@ h1 {
 
 .iconGroupsIcon {
     background: url(../img/icons/groups.png);
-    background-size:100%;
+    background-size: 100%;
     z-index: 2;
     width: 100%;
     height: 100%;
@@ -225,11 +371,11 @@ h1 {
     width: 37px;
     height: 43px;
     background: url(../img/icons/groupsHead.png);
-    background-size:100%;
+    background-size: 100%;
     position: absolute;
     top: 21px;
     z-index: 1;
-    opacity:0;
+    opacity: 0;
 }
 
 .iconHead.leftHead {
@@ -241,7 +387,7 @@ h1 {
 }
 
 .iconGroups.activated .iconHead {
-    opacity:1;
+    opacity: 1;
 }
 
 .iconGroups.activated .iconHead.leftHead {
@@ -268,14 +414,14 @@ h1 {
     height: 22px;
     opacity: 0;
     top: 24px;
-    background-size:22px 100%;
+    background-size: 22px 100%;
 }
 
 .sharePlay {
     background: url(../img/icons/sharePlay.png);
     height: 36px;
     top: 27px;
-    background-size:42px 100%;
+    background-size: 42px 100%;
 }
 
 .iconShare.activated .shareArrow {

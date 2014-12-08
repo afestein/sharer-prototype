@@ -1,4 +1,5 @@
 <?php include('inc/header.php'); ?>
+<?php include('inc/nav.php'); ?>
 
   <div id="filters">
     <div class="container">
@@ -117,4 +118,5 @@
 
   </div>
 
+<?php include('inc/footerBlocks.php'); ?>
 <?php include('inc/footer.php'); ?>
