@@ -19,7 +19,9 @@
       </div>
       <div class="row" style="height: 34%;">
         <div class="col-lg-4"><!-- Nothing to see here, move along --></div>
-        <div class="col-lg-4 homePlay"><img src="/assets/img/play.png" alt="play" width="92" height="92"/></div>
+        <div class="col-lg-4 homePlay">
+          <a href="/videos.php"><img src="/assets/img/play.png" alt="play" width="92" height="92"/></a>
+        </div>
         <div class="col-lg-4 getInvolved">
           <span>yes<span>HE</span>is</span> exists to put a positive dent in the digital world we live in
         </div>
@@ -31,7 +33,7 @@
   <div id="homeContent">
     <div id="opacityMask"></div>
     <div class="container">
-      <div class="row promo">
+      <div class="row promo promo1">
         <div class="col-lg-4 vcenter">
           <img src="/assets/img/promo1.png" alt="heart icon" width="182" height="169"/>
         </div>
@@ -40,7 +42,7 @@
           <h2><span>HUMANITY'S</span><br/>NEEDS</h2>
         </div>
       </div>
-      <div class="row promo">
+      <div class="row promo promo2">
         <div class="col-lg-4 vcenter">
           <img src="/assets/img/promo2.png" alt="heart icon" width="182" height="169"/>
         </div>
@@ -49,7 +51,7 @@
           <h2>WE ARE<br/><span>CALLED</span></h2>
         </div>
       </div>
-      <div class="row promo">
+      <div class="row promo promo3">
         <div class="col-lg-4 vcenter">
           <img src="/assets/img/promo3.png" alt="heart icon" width="182" height="169"/>
         </div>
