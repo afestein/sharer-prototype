@@ -174,7 +174,7 @@ body {
     padding-top: 30px;
 }
 
-.landingHeadline.col-lg-12 {
+.landingHeadline {
     text-align: center;
     color: #FFF;
     height: 100%;
@@ -300,6 +300,7 @@ body {
 
 .promo .jigsaw.animate {
     transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     top: 21px;
     left: -48px;
 }
