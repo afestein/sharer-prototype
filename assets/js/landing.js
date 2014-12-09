@@ -17,8 +17,8 @@ $(document).ready(function () {
     }
 
     function morph(element) {
-        $(element).css('transform', 'rotateY(90deg)').css('opacity','0');
-//        $(element).css('width', '1000px').css('height','1000px').css('opacity','0');
+        $(element).css('opacity','0');
+//        $(element).css('transform', 'rotateY(90deg)').css('opacity','0');
     }
 
     function unMorph(element) {
@@ -41,13 +41,11 @@ $(document).ready(function () {
         /** Second promo **/
 
         // Morph image
-        if ($(window).scrollTop() >= (viewportHeight*2)) {
+        if ($(window).scrollTop() >= (viewportHeight*1.5)) {
             morph('.promo1 img');
-            unMorph('.promo2 img');
         }
-        if ($(window).scrollTop() < (viewportHeight*2)) {
+        if ($(window).scrollTop() < (viewportHeight*1.5)) {
             unMorph('.promo1 img');
-            morph('.promo2 img');
         }
 
         // Sticky image
@@ -61,22 +59,12 @@ $(document).ready(function () {
         /** Third promo **/
 
         // Morph image
-        if ($(window).scrollTop() >= (viewportHeight*3)) {
+        if ($(window).scrollTop() >= (viewportHeight*2.5)) {
             morph('.promo2 img');
-            unMorph('.promo3 img');
         }
-        if ($(window).scrollTop() < (viewportHeight*3)) {
-//            unMorph('.promo2 img');
-            morph('.promo3 img');
+        if ($(window).scrollTop() < (viewportHeight*2.5)) {
+            unMorph('.promo2 img');
         }
-
-        // Sticky image
-//        if ($(window).scrollTop() >= viewportHeight*3) {
-//            glue('.promo3 img');
-//        }
-//        if ($(window).scrollTop() < viewportHeight*3) {
-//            unGlue('.promo3 img');
-//        }
 
     });
 
