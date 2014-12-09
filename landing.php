@@ -61,8 +61,9 @@
       <div class="row promo promo3">
         <div class="col-md-4 vcenter">
           <div class="promoImg">
-            <img src="assets/img/promo/promo3a.png" alt="people icon" width="182" height="169"/>
-<!--            <img src="assets/img/promo/promo3b.png" alt="people icon" width="182" height="169"/>-->
+            <img src="assets/img/promo/promo3a.png" alt="people icon" width="182" height="169" class="people1"/>
+            <img src="assets/img/promo/promo3b.png" alt="people icon" width="182" height="169" class="people2"/>
+            <img src="assets/img/promo/promo3c.png" alt="people icon" width="182" height="169" class="people3"/>
           </div>
         </div>
         <div class="col-md-8 vcenter">

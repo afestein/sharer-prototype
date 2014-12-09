@@ -281,6 +281,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    transition: all 0.5s ease;
 }
 
 .promo .heart {
@@ -288,10 +289,15 @@ body {
     top: -100px;
 }
 
+.promo .heart.animate {
+    opacity: 1;
+    top: 0;
+}
+
 .promo .jigsaw {
     position: relative;
-    transition: all 0.3s ease;
 }
+
 .promo .jigsaw.animate {
     transform: rotate(-45deg);
     top: 21px;
@@ -300,6 +306,27 @@ body {
 
 .promo h2 span {
     color: #E11325;
+}
+
+.promo3 img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.promo3 img.people1 {
+    z-index: 1;
+    left: -55px;
+    opacity: 1;
+}
+
+.promo3 img.people3 {
+    left: 55px;
+}
+
+.promo3 img.animate {
+    opacity: 1;
+    left: 0;
 }
 
 /* Typography */
