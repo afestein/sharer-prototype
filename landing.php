@@ -1,8 +1,8 @@
 <?php include('inc/header.php'); ?>
 
   <video autoplay loop id="bgVideo">
-    <source src="assets/video/background.mp4" type="video/mp4">
-    <source src="assets/video/background.ogv" type="video/ogg">
+    <source src="assets/video/background3.mp4" type="video/mp4">
+    <source src="assets/video/background3.ogv" type="video/ogg">
   </video>
 
   <div id="landingVisible">
