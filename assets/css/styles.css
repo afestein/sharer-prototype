@@ -270,15 +270,33 @@ body {
     height: 500px;
 }
 
-.promo img {
+.promoImg {
     float: left;
-    transition: all 0.2s ease;
+    position: relative;
+    width: 182px;
+    height: 169px;
 }
 
-/*.promo2 img {*/
-    /*transform: rotateY(90deg);*/
-    /*transition:all 0 ease 0;*/
-/*}*/
+.promo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.promo .heart {
+    opacity: 0;
+    top: -100px;
+}
+
+.promo .jigsaw {
+    position: relative;
+    transition: all 0.3s ease;
+}
+.promo .jigsaw.animate {
+    transform: rotate(-45deg);
+    top: 21px;
+    left: -48px;
+}
 
 .promo h2 span {
     color: #E11325;

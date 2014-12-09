@@ -23,7 +23,7 @@
           <a href="index.php"><img src="assets/img/play.png" alt="play" width="92" height="92"/></a>
         </div>
         <div class="col-md-4 getInvolved">
-          <span>yes<span>HE</span>is</span> exists to put a positive dent in the digital world we live in<br />
+          <span>yes<span>HE</span>is</span> exists to put a positive dent in the digital world we live in<br/>
           <a href="index.php">Log in</a>
         </div>
       </div>
@@ -36,7 +36,10 @@
     <div class="container">
       <div class="row promo promo1">
         <div class="col-md-4 vcenter">
-          <img src="assets/img/promo1.png" alt="heart icon" width="182" height="169"/>
+          <div class="promoImg">
+            <img src="assets/img/promo/promo1a.png" alt="heart icon" width="182" height="169" class="heart"/>
+            <img src="assets/img/promo/promo1b.png" alt="heart icon" width="182" height="169"/>
+          </div>
         </div>
         <div class="col-md-8 vcenter">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut velit nec justo faucibus maximus.</p>
@@ -45,7 +48,10 @@
       </div>
       <div class="row promo promo2">
         <div class="col-md-4 vcenter">
-          <img src="assets/img/promo2.png" alt="heart icon" width="182" height="169"/>
+          <div class="promoImg">
+            <img src="assets/img/promo/promo2a.png" alt="jigsaw icon" width="182" height="169"/>
+            <img src="assets/img/promo/promo2b.png" alt="jigsaw icon" width="182" height="169" class="jigsaw undone"/>
+          </div>
         </div>
         <div class="col-md-8 vcenter">
           <h2>WE ARE<br/><span>CALLED</span></h2>
@@ -54,7 +60,10 @@
       </div>
       <div class="row promo promo3">
         <div class="col-md-4 vcenter">
-          <img src="assets/img/promo3.png" alt="heart icon" width="182" height="169"/>
+          <div class="promoImg">
+            <img src="assets/img/promo/promo3a.png" alt="people icon" width="182" height="169"/>
+<!--            <img src="assets/img/promo/promo3b.png" alt="people icon" width="182" height="169"/>-->
+          </div>
         </div>
         <div class="col-md-8 vcenter">
           <h2>YES<span>HE</span>IS</h2>
