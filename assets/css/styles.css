@@ -107,13 +107,13 @@ body {
     line-height: 90px;
     border-top: 1px solid #D9D8DD;
     color: #8c8c91;
-    position:relative;
-    z-index:2;
-    background:#FFF;
+    position: relative;
+    z-index: 2;
+    background: #FFF;
 }
 
 #footer ul {
-    margin:0;
+    margin: 0;
 }
 
 #submit {
@@ -132,17 +132,17 @@ body {
 }
 
 /*.layoutTable {*/
-    /*display: table;*/
-    /*width: 100%;*/
+/*display: table;*/
+/*width: 100%;*/
 /*}*/
 
 .layoutRow {
-    display:table-row;
+    display: table-row;
 }
 
 .vcenter {
     display: table-cell;
-    float:none;
+    float: none;
     vertical-align: middle;
 }
 
@@ -221,11 +221,11 @@ body {
 #landingVisible {
     position: relative;
     height: 100%;
-    z-index:1;
+    z-index: 1;
 }
 
 #landingVisible a {
-    color:#FFF;
+    color: #FFF;
     text-decoration: underline;
 }
 
@@ -245,36 +245,43 @@ body {
 #opacityMask {
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
-    width:100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .landing #footer {
-    width:100%;
-    background:#FFF;
-    position:relative;
-    z-index:1;
-    margin:0;
+    width: 100%;
+    background: #FFF;
+    position: relative;
+    z-index: 1;
+    margin: 0;
     height: 142px;
-    border-bottom:10px solid #E11325;
+    border-bottom: 10px solid #E11325;
 }
 
 .promo {
-    font-weight:600;
-    font-size:18px;
+    font-weight: 600;
+    font-size: 18px;
 }
+
 .promo > div {
     height: 500px;
 }
 
 .promo img {
-    float:left;
+    float: left;
+    transition: all 0.2s ease;
+}
+
+.promo2 img {
+    transform: rotateY(90deg);
+    transition:all 0 ease 0;
 }
 
 .promo h2 span {
-    color:#E11325;
+    color: #E11325;
 }
 
 /* Typography */

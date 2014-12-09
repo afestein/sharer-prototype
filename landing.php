@@ -48,8 +48,8 @@
           <img src="assets/img/promo2.png" alt="heart icon" width="182" height="169"/>
         </div>
         <div class="col-lg-8 vcenter">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut velit nec justo faucibus maximus.</p>
           <h2>WE ARE<br/><span>CALLED</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut velit nec justo faucibus maximus.</p>
         </div>
       </div>
       <div class="row promo promo3">
@@ -57,8 +57,8 @@
           <img src="assets/img/promo3.png" alt="heart icon" width="182" height="169"/>
         </div>
         <div class="col-lg-8 vcenter">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut velit nec justo faucibus maximus.</p>
           <h2>YES<span>HE</span>IS</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut velit nec justo faucibus maximus.</p>
         </div>
       </div>
     </div>

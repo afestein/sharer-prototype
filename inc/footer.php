@@ -19,7 +19,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 <?php if ($page == "landing.php"): ?>
-  <script type="text/javascript" src="assets/js/home.js"></script>
+  <script type="text/javascript" src="assets/js/landing.js"></script>
 <?php else: ?>
   <script type="text/javascript" src="assets/js/ui.js"></script>
 <?php endif; ?>
