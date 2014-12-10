@@ -7,8 +7,7 @@
         <b>Filter by </b>
 
         <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                  data-toggle="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
             All Topics
             <span class="caret"></span>
           </button>
@@ -22,8 +21,7 @@
           </ul>
         </div>
         <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                  data-toggle="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
             All Languages
             <span class="caret"></span>
           </button>
@@ -37,8 +35,7 @@
           </ul>
         </div>
         <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                  data-toggle="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
             All Locations
             <span class="caret"></span>
           </button>
@@ -56,8 +53,7 @@
         <b>Sort by </b>
 
         <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                  data-toggle="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
             Most Effective
             <span class="caret"></span>
           </button>

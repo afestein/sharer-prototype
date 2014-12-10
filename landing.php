@@ -1,8 +1,8 @@
 <?php include('inc/header.php'); ?>
 
   <video autoplay loop id="bgVideo">
-    <source src="assets/video/background3.mp4" type="video/mp4">
-    <source src="assets/video/background3.ogv" type="video/ogg">
+    <source src="assets/video/background.mp4" type="video/mp4">
+    <source src="assets/video/background.ogv" type="video/ogg">
   </video>
 
   <div id="landingVisible">
@@ -71,6 +71,33 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut velit nec justo faucibus maximus.</p>
         </div>
       </div>
+
+      <div class="row vidThumbs">
+        <div class="col-md-12">
+          <div class="row">
+            <?php
+            $count = 1;
+            $vidArray = getVideos('yesheis', 8);
+            foreach ($vidArray as $vid) {
+              print '<div class="col-xs-3">';
+              print '<span class="glyphicon glyphicon-heart-empty"></span>';
+              print '<span class="glyphicon glyphicon-heart"></span>';
+              print '<a class="vidLink" target="blank" href="http://www.youtube.com/watch/' . $vid['id'] . '">';
+              print '<div class="vidThumb"><div class="overlay"></div><img src="http://img.youtube.com/vi/' . $vid['id'] . '/0.jpg"/>';
+              print '</div><div class="vidInfo">';
+              print '<div class="vidTag">';
+              print '<span class="length">' . $count . ':12</span></div>';
+              print '<div class="inner">';
+              print '<p class="tag">' . $vid['category'] . '</p><h4>' . $vid['title'] . '</h4><p class="info">' . $vid['content'] . '</p></div></div></div>';
+              print '</a>';
+              $count++;
+            }
+            ?>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
 
