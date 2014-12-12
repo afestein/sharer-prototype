@@ -20,10 +20,22 @@ $(document).ready(function () {
         $(element).css({'position': 'relative', 'top': '0'});
     }
 
+    var lastScrollTop = 0;
+
     function parallax(element) {
+
+        var offset = 2;
+
+        // Determine whether scrolling up or scrolling down
+        var st = $(this).scrollTop();
+        if (st < lastScrollTop){
+            offset = offset * -1;
+        }
+        lastScrollTop = st;
+
         var pos = element.css('background-position').split(" ");
         pos[0] = parseInt(pos[0].replace("%","").replace("px",""));
-        pos[1] = parseInt(pos[1].replace("%","").replace("px","")) - 50;
+        pos[1] = parseInt(pos[1].replace("%","").replace("px","")) - offset;
         newpos = pos[0] + 'px ' + pos[1] + 'px';
         $('#opacityMask').css('background-position', newpos)
     }

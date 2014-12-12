@@ -250,7 +250,7 @@ body {
 #landingContent #opacityMask {
     z-index: 0;
     background-image: url(../img/pattern.png);
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     height: 100%;
     width: 100%;
     position: absolute;
