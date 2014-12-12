@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     function parallax(element) {
 
-        var offset = 2;
+        var offset = 1;
 
         // Determine whether scrolling up or scrolling down
         var st = $(this).scrollTop();
@@ -40,14 +40,10 @@ $(document).ready(function () {
         $('#opacityMask').css('background-position', newpos)
     }
 
-
     // Fire animations when scrolled into position
     $(window).scroll(function () {
 
         parallax($('#opacityMask'));
-
-
-
 
         /** First promo **/
 
