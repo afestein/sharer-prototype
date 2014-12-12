@@ -242,7 +242,13 @@ body {
     position: relative;
 }
 
-#opacityMask {
+#landingContent > div {
+    z-index: 1;
+    position: relative;
+}
+
+#landingContent #opacityMask {
+    z-index: 0;
     background: url(../img/pattern.png);
     height: 100%;
     width: 100%;
@@ -330,11 +336,40 @@ body {
     left: 0;
 }
 
+#landingVisible {
+    background: url(../img/triangle1.png) no-repeat right 0 top 68px,
+    url(../img/triangle1.png) no-repeat left 117px bottom 10px,
+    url(../img/triangle2.png) no-repeat right 175px,
+    url(../img/triangle2.png) no-repeat right 0 bottom 10px;
+}
+
+#landingContent1 {
+    background: url(../img/triangle1.png) no-repeat left top,
+    url(../img/triangle2.png) no-repeat 107px top,
+    url(../img/triangle2.png) no-repeat right 107px top,
+    url(../img/triangle1.png) no-repeat right bottom;
+}
+
+#landingContent2 {
+    background: url(../img/triangle2.png) no-repeat right top;
+}
+
+#landingContent3 {
+    background: url(../img/triangle2.png) no-repeat left top,
+    url(../img/triangle1.png) no-repeat right bottom;
+}
+
+#landingContent4 {
+    background: url(../img/triangle2.png) no-repeat right top,
+    url(../img/triangle1.png) no-repeat right 107px top 0,
+    url(../img/triangle3.png) no-repeat left bottom;
+}
+
 /*.landing .vidThumbs p, .landing .vidThumbs h4 {*/
-    /*background:#FFF;*/
+/*background:#FFF;*/
 /*}*/
 /*.landing .vidThumbs h4 {*/
-    /*color:#000;*/
+/*color:#000;*/
 /*}*/
 
 /* Typography */
