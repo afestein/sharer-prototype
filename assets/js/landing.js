@@ -20,9 +20,22 @@ $(document).ready(function () {
         $(element).css({'position': 'relative', 'top': '0'});
     }
 
+    function parallax(element) {
+        var pos = element.css('background-position').split(" ");
+        pos[0] = parseInt(pos[0].replace("%","").replace("px",""));
+        pos[1] = parseInt(pos[1].replace("%","").replace("px","")) - 50;
+        newpos = pos[0] + 'px ' + pos[1] + 'px';
+        $('#opacityMask').css('background-position', newpos)
+    }
+
 
     // Fire animations when scrolled into position
     $(window).scroll(function () {
+
+        parallax($('#opacityMask'));
+
+
+
 
         /** First promo **/
 

@@ -20,8 +20,10 @@
 
 <?php if ($page == "landing.php"): ?>
   <script type="text/javascript" src="assets/js/landing.js"></script>
+<?php else:?>
+  <script type="text/javascript" src="assets/js/stats.js"></script>
 <?php endif; ?>
-<script type="text/javascript" src="assets/js/ui.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
 
 </body>
 </html>
