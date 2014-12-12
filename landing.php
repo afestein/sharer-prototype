@@ -1,5 +1,11 @@
 <?php include('inc/header.php'); ?>
 
+  <div id="ghostNav">
+    <div class="container">
+      <img src="assets/img/dummy-buttons.png" />
+      </div>
+  </div>
+
   <video autoplay loop id="bgVideo">
     <source src="assets/video/background.mp4" type="video/mp4">
     <source src="assets/video/background.ogv" type="video/ogg">
@@ -8,9 +14,7 @@
   <div id="landingVisible">
     <div class="container landingWrapper">
       <div class="row">
-        <div class="col-md-12 landingHeader">
-          <img src="assets/img/logo-white.png" alt="yesHEis" width="131" height="38"/>
-        </div>
+        <div class="col-md-12 landingHeader"></div>
       </div>
       <div class="row">
         <div class="col-md-12 landingHeadline">

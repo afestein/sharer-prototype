@@ -170,10 +170,6 @@ body {
     color: #FFF;
 }
 
-.landingHeader {
-    padding-top: 30px;
-}
-
 .landingHeadline {
     text-align: center;
     color: #FFF;
@@ -249,7 +245,7 @@ body {
 
 #landingContent #opacityMask {
     z-index: 0;
-    background: url(../img/pattern.png);
+    background: url(../img/pattern.png) fixed;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -365,12 +361,22 @@ body {
     url(../img/triangle3.png) no-repeat left bottom;
 }
 
-/*.landing .vidThumbs p, .landing .vidThumbs h4 {*/
-/*background:#FFF;*/
-/*}*/
-/*.landing .vidThumbs h4 {*/
-/*color:#000;*/
-/*}*/
+#ghostNav {
+    background:#000;
+    position: fixed;
+    z-index:5;
+    width:100%;
+}
+
+#ghostNav .container, .landingHeader {
+    background: url(../img/logo-white.png) 15px center no-repeat;
+    height: 67px;
+}
+
+#ghostNav img {
+    margin-top:15px;
+    float:right;
+}
 
 /* Typography */
 

@@ -1,15 +1,18 @@
 $(document).ready(function () {
 
-    $('.jigsaw').click(function(){
+    $('.jigsaw').click(function () {
         $(this).addClass('animate');
     });
 
     var viewportHeight = $(window).height();
-
     var promoImgHeight = $('.promo1 img').attr('height');
-
+    var ghostNav = $('#ghostNav');
+    var ghostHeight = parseInt(ghostNav.css('height'));
     var imgOffset = (viewportHeight - promoImgHeight) / 2;
+    var ghostActivated = 0;
+    var ghostDeactivated = 0;
 
+    ghostNav.css('top',ghostHeight*-1);
     $('.promo > div').css('height', viewportHeight);
 
     function glue(element) {
@@ -20,30 +23,26 @@ $(document).ready(function () {
         $(element).css({'position': 'relative', 'top': '0'});
     }
 
-    var lastScrollTop = 0;
-
-    function parallax(element) {
-
-        var offset = 1;
-
-        // Determine whether scrolling up or scrolling down
-        var st = $(this).scrollTop();
-        if (st < lastScrollTop){
-            offset = offset * -1;
-        }
-        lastScrollTop = st;
-
-        var pos = element.css('background-position').split(" ");
-        pos[0] = parseInt(pos[0].replace("%","").replace("px",""));
-        pos[1] = parseInt(pos[1].replace("%","").replace("px","")) - offset;
-        newpos = pos[0] + 'px ' + pos[1] + 'px';
-        $('#opacityMask').css('background-position', newpos)
-    }
-
     // Fire animations when scrolled into position
     $(window).scroll(function () {
 
-        parallax($('#opacityMask'));
+        /** Ghost header **/
+
+        if (ghostActivated == 0 && $(window).scrollTop() > viewportHeight/2) {
+            ghostActivated = 1;
+            ghostDeactivated = 0;
+            ghostNav.animate({
+                top:0
+            },200);
+        }
+
+        if (ghostDeactivated == 0 && ghostActivated == 1 && $(window).scrollTop() < viewportHeight/2) {
+            ghostDeactivated = 1;
+            ghostActivated = 0;
+            ghostNav.animate({
+                top:(ghostHeight*-1)
+            },200);
+        }
 
         /** First promo **/
 
@@ -83,16 +82,16 @@ $(document).ready(function () {
 
         /** Third promo **/
 
-        if ($(window).scrollTop() >= (viewportHeight*2.5)) {
+        if ($(window).scrollTop() >= (viewportHeight * 2.5)) {
             $('.promo2 .promoImg').fadeOut(500);
         }
-        if ($(window).scrollTop() < (viewportHeight*2.5)) {
+        if ($(window).scrollTop() < (viewportHeight * 2.5)) {
             $('.promo2 .promoImg').fadeIn(500);
         }
-        if ($(window).scrollTop() >= (viewportHeight*2.75)) {
+        if ($(window).scrollTop() >= (viewportHeight * 2.75)) {
             $('.promo3 img').addClass('animate');
         }
-        if ($(window).scrollTop() < (viewportHeight*2.75)) {
+        if ($(window).scrollTop() < (viewportHeight * 2.75)) {
             $('.promo3 img').removeClass('animate');
         }
     });
