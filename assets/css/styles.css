@@ -378,6 +378,15 @@ body {
     float:right;
 }
 
+.landing .vidLink {
+    transition: all 0.5s ease;
+    opacity:0;
+}
+
+.landing .vidLink.activatedTile {
+    opacity:1;
+}
+
 /* Typography */
 
 body {

@@ -99,7 +99,7 @@
               $count = 1;
               $vidArray = getVideos('yesheis', 8);
               foreach ($vidArray as $vid) {
-                print '<div class="col-xs-3">';
+                print '<div class="col-xs-3 tile-' . $count . '">';
                 print '<span class="glyphicon glyphicon-heart-empty"></span>';
                 print '<span class="glyphicon glyphicon-heart"></span>';
                 print '<a class="vidLink" target="blank" href="http://www.youtube.com/watch/' . $vid['id'] . '">';

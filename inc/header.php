@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <?php
 // Figure out what page we are on while prototyping
 $page = explode("/", $_SERVER['REQUEST_URI']);
@@ -25,7 +27,6 @@ function getVideos($term, $limit)
 
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
