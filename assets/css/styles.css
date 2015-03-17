@@ -162,10 +162,6 @@ body {
     height: 100%;
 }
 
-.landingWrapper .row {
-    height: 33%;
-}
-
 #landingVisible, #landingContent {
     color: #FFF;
 }
@@ -179,17 +175,20 @@ body {
 .landingHeadline, .promo h2 {
     font-size: 70px;
     font-weight: 700;
-    line-height: 84px;
+    line-height: 80px;
     letter-spacing: 10px;
 }
 
 .landingHeadline span {
-    font-size: 24px;
-    border-bottom: 8px solid #E11325;
+    font-size: 18px;
+    border-top: 8px solid #E11325;
     width: 320px;
     display: inline-block;
-    line-height: 61px;
-    margin-bottom: 17px;
+    line-height: 26px;
+    margin-top: 17px;
+    padding-top: 17px;
+    letter-spacing: normal;
+    font-weight: 500;
 }
 
 .landingHeadline .cell, .landingHeadline .table {
@@ -199,19 +198,6 @@ body {
 
 .landingPlay {
     text-align: center;
-}
-
-.getInvolved {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.getInvolved span {
-    font-style: italic;
-}
-
-.getInvolved span span {
-    color: #E11325;
 }
 
 #landingVisible {

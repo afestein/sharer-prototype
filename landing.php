@@ -13,22 +13,21 @@
 
   <div id="landingVisible">
     <div class="container landingWrapper">
-      <div class="row">
+      <div class="row" style="height: 25%;">
         <div class="col-md-12 landingHeader"></div>
       </div>
-      <div class="row">
+      <div class="row" style="height: 45%;">
         <div class="col-md-12 landingHeadline">
-          <span>THE</span><br/>GREAT<br/>COMMISSION
+          HOW WILL THEY<br />KNOW UNLESS<br />WE TELL THEM<br/><span>yesHEis exists to help you share<br />the good news of Jesus</span>
         </div>
       </div>
-      <div class="row" style="height: 34%;">
+      <div class="row" style="height: 30%;">
         <div class="col-md-4"><!-- Nothing to see here, move along --></div>
         <div class="col-md-4 landingPlay">
           <a href="index.php"><img src="assets/img/play.png" alt="play" width="92" height="92"/></a>
         </div>
-        <div class="col-md-4 getInvolved">
-          <span>yes<span>HE</span>is</span> exists to put a positive dent in the digital world we live in<br/>
-          <a href="index.php">Log in</a>
+        <div class="col-md-4">
+          <img src="assets/img/dummy-buttons2.png" />
         </div>
       </div>
     </div>
