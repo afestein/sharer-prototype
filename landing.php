@@ -27,7 +27,7 @@
           <a href="index.php"><img src="assets/img/play.png" alt="play" width="92" height="92"/></a>
         </div>
         <div class="col-md-4">
-          <img src="assets/img/dummy-buttons2.png" />
+            <a href="index.php"><img src="assets/img/dummy-buttons2.png" /></a>
         </div>
       </div>
     </div>
